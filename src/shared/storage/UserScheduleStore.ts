@@ -15,6 +15,7 @@ export const UserScheduleStore = createLocalStore<IUserScheduleStore>({
     schedules: [
         new UserSchedule({
             courses: [],
+            commitments: [],
             id: generateRandomId(),
             name: 'Schedule 1',
             hours: 0,

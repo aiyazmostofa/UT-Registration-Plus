@@ -322,6 +322,7 @@ describe('scheduleToIcsString', () => {
         const schedule = serde(
             new UserSchedule({
                 courses: [],
+                commitments: [],
                 hours: 0,
                 id: 'fajowe',
                 name: 'fajowe',
@@ -348,6 +349,7 @@ describe('scheduleToIcsString', () => {
                         },
                     }),
                 ],
+                commitments: [],
                 hours: 0,
                 id: 'fajowe',
                 name: 'fajowe',
@@ -377,6 +379,7 @@ describe('scheduleToIcsString', () => {
                         },
                     }),
                 ],
+                commitments: [],
                 hours: 0,
                 id: 'fajowe',
                 name: 'fajowe',

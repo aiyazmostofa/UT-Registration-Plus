@@ -30,6 +30,7 @@ export default async function createSchedule(scheduleName: string) {
         id: generateRandomId(),
         name,
         courses: [],
+        commitments: [],
         hours: 0,
         updatedAt: Date.now(),
     };

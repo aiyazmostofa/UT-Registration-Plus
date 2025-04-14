@@ -26,6 +26,7 @@ export default async function duplicateSchedule(scheduleId: string): Promise<str
         id: generateRandomId(),
         name: updatedName,
         courses: JSON.parse(JSON.stringify(schedule.courses)),
+        commitments: JSON.parse(JSON.stringify(schedule.commitments)),
         hours: schedule.hours,
         updatedAt: Date.now(),
     } satisfies typeof schedule);

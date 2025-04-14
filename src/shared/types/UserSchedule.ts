@@ -2,12 +2,14 @@ import type { Serialized } from 'chrome-extension-toolkit';
 
 import { generateRandomId } from '../util/random';
 import { Course } from './Course';
+import { Commitment } from './Commitment';
 
 /**
  * Represents a user's schedule that is stored in the extension
  */
 export class UserSchedule {
     courses: Course[];
+    commitments: Commitment[];
     id: string;
     name: string;
     hours: number;
@@ -16,6 +18,7 @@ export class UserSchedule {
 
     constructor(schedule: Serialized<UserSchedule>) {
         this.courses = schedule.courses.map(c => new Course(c));
+        this.commitments = schedule.commitments.map(c => new Commitment(c));
         this.id = schedule.id ?? generateRandomId();
         this.name = schedule.name;
         this.hours = this.courses.reduce((acc, c) => acc + c.creditHours, 0);

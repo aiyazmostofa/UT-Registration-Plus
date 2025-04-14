@@ -58,6 +58,7 @@ export const exampleCourse: Course = new Course({
 
 export const exampleSchedule: UserSchedule = new UserSchedule({
     courses: [exampleCourse],
+    commitments: [],
     id: 'az372389blep',
     name: 'Example Schedule',
     hours: 3,
@@ -113,6 +114,7 @@ export const bevoCourse: Course = new Course({
 
 export const bevoSchedule: UserSchedule = new UserSchedule({
     courses: [bevoCourse],
+    commitments: [],
     id: 'bevoshenanigans52',
     name: 'Bevo Schedule',
     hours: 3,
@@ -169,6 +171,7 @@ export const mikeScottCS314Course: Course = new Course({
 
 export const mikeScottCS314Schedule: UserSchedule = new UserSchedule({
     courses: [mikeScottCS314Course],
+    commitments: [],
     id: 'omgitsmikescott314',
     name: 'Mike Scott CS314 Schedule',
     hours: 3,
@@ -243,6 +246,7 @@ export const multiMeetingMultiInstructorCourse: Course = new Course({
 
 export const multiMeetingMultiInstructorSchedule: UserSchedule = new UserSchedule({
     courses: [multiMeetingMultiInstructorCourse],
+    commitments: [],
     id: 'mmmis',
     name: 'Multi Meeting Multi Instructor Schedule',
     hours: 3,
